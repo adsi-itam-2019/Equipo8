@@ -32,23 +32,7 @@ class _SecondScreenState extends State<SecondScreen> {
                   background: Container(
                     child: Stack(
                       children: <Widget>[
-                        Image.asset('assets/images/house2.jpeg', fit: BoxFit.cover ,),
-                        Positioned(
-                          child: Icon(
-                            Icons.favorite_border,
-                            color: Colors.white,
-                          ),
-                          top: size.height / 5,
-                          left: size.width - 40.0,
-                        ),
-                        Positioned(
-                          child: Icon(
-                            Icons.comment,
-                            color: Colors.white,
-                          ),
-                          top: size.height / 4,
-                          left: size.width - 40.0,
-                        ),
+                        Image.asset('assets/images/casa.jpeg', fit: BoxFit.cover ,),
                       ],
                     ),
                   )),
@@ -61,7 +45,7 @@ class _SecondScreenState extends State<SecondScreen> {
               child: Container(
                 padding: EdgeInsets.only(left: 10.0, bottom: 10.0),
                 child: Text(
-                  "Adorable Garden Blending Gingerbread House",
+                  "Hermosa casa con jardín",
                   style: TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold),
                 ),
               ),
@@ -78,7 +62,7 @@ class _SecondScreenState extends State<SecondScreen> {
                           child: CircleAvatar(
                             radius: 30.0,
                             backgroundImage:
-                            AssetImage('assets/images/rosius.jpeg'),
+                            AssetImage('assets/images/roomie.jpeg'),
                           ),
                         ),
                         Expanded(
@@ -89,7 +73,7 @@ class _SecondScreenState extends State<SecondScreen> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: <Widget>[
                                 Text(
-                                  "Entire House",
+                                  "Casa",
                                   style: TextStyle(fontWeight: FontWeight.bold),
                                 ),
                                 Padding(
@@ -97,13 +81,13 @@ class _SecondScreenState extends State<SecondScreen> {
                                   child: Row(
                                     children: <Widget>[
                                       Text(
-                                        "Hosted By",
+                                        "Alojado por",
                                         style: TextStyle(color: Colors.black54),
                                       ),
                                       Padding(
                                         padding: const EdgeInsets.only(left: 3.0),
                                         child: Text(
-                                          "Rosius",
+                                          "Juan",
                                           style:
                                           TextStyle(color: Color(0xFF298329)),
                                         ),
@@ -114,7 +98,7 @@ class _SecondScreenState extends State<SecondScreen> {
                                 Row(
                                   children: <Widget>[
                                     Text(
-                                      "See Ratings",
+                                      "Calificación",
                                       style: TextStyle(color: Colors.grey),
                                     ),
                                     Padding(
@@ -140,7 +124,7 @@ class _SecondScreenState extends State<SecondScreen> {
                                 color: Color(0xFF298329),
                               ),
                               Text(
-                                "San Francisco",
+                                "Calle Guerrero",
                                 style: TextStyle(fontWeight: FontWeight.bold),
                               )
                             ],
@@ -156,16 +140,7 @@ class _SecondScreenState extends State<SecondScreen> {
                           color: Color(0xFF298329),
                           size: 30.0,
                         ),
-                        Icon(
-                          Icons.shopping_cart,
-                          color: Color(0xFF298329),
-                          size: 30.0,
-                        ),
-                        Icon(
-                          Icons.cake,
-                          color: Color(0xFF298329),
-                          size: 30.0,
-                        ),
+
                         Icon(
                           Icons.event_note,
                           color: Color(0xFF298329),
@@ -180,49 +155,22 @@ class _SecondScreenState extends State<SecondScreen> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: <Widget>[
                           Text(
-                            "About this Home",
+                            "Sobre este departamento",
                             style: TextStyle(fontWeight: FontWeight.bold),
                           ),
                           Padding(
                             padding: const EdgeInsets.only(top: 10.0),
                             child: Text(
-                              "There are not many cities that have experience such social and political"
-                                  " extrmes in recent history as Amsterdam.In the 20th century alone, Amsterdam"
-                                  "faced the atrocities of war for the first tune in 400years, became radical...",
+                              "Hermosa casa con vistas, jardín y alberca.\n asfda"
+                                  "adsfasd asdf afasdf a aha  dg aadgadfga gasd gad "
+                                  "adsf asdf ads asfda.",
                               style: TextStyle(color: Colors.grey),
                             ),
                           ),
-                          Padding(
-                            padding: const EdgeInsets.only(bottom: 10.0),
-                            child: Text(
-                              "Read More....",
-                              style: TextStyle(color: Color(0xFF298329)),
-                            ),
-                          ),
-
                         ],
                       ),
                     ),
-                    Row(
-                      children: <Widget>[
-                        Expanded(
-                          child: Padding(
-                            padding: const EdgeInsets.only(bottom: 10.0),
-                            child: Text(
-                              "Check in: After 3pm",
-                              style: TextStyle(color: Colors.black54,fontSize: 16.0),
-                            ),
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.only(bottom: 10.0,right: 10.0),
-                          child: Text(
-                            "Check Out:11am",
-                            style: TextStyle(color:Colors.black54,fontSize: 16.0),
-                          ),
-                        ),
-                      ],
-                    ),
+
                     SizedBox(
                       height: 400.0,
                       child: GoogleMap(
@@ -246,7 +194,7 @@ class _SecondScreenState extends State<SecondScreen> {
             //   shape: BoxShape.circle,
               gradient: new LinearGradient(colors: [
                 const Color(0xFF298329),
-                const Color(0xFF97D197),
+                const Color(0xFF33A433),
               ],
                   begin: const FractionalOffset(0.0, 0.0),
                   end: const FractionalOffset(0.9, 0.0),
@@ -262,7 +210,7 @@ class _SecondScreenState extends State<SecondScreen> {
 
             child: new Padding(
               padding: const EdgeInsets.all(24.0),
-              child:new Text("Book Now",
+              child:new Text("Agendar una cita",
                   style: new TextStyle(
                       color: Colors.white,
                       fontSize: 22.0,

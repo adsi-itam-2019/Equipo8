@@ -122,20 +122,6 @@ class _HomePageState extends State<HomePage> {
     });
   }
 
-  Widget _buildFab(BuildContext context) {
-    final icons = [ Icons.sms, Icons.mail, Icons.phone ];
-    return FloatingActionButton(
-      onPressed: () {
-        Navigator.push(
-          context,
-          MaterialPageRoute(builder: (context) => SecondScreen()),
-        );
-      },
-      tooltip: 'ITAMRoom',
-      backgroundColor: Colors.white,
-      elevation: 2.0,
-    );
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -166,7 +152,10 @@ class _HomePageState extends State<HomePage> {
                         children: <Widget>[
                           Expanded(child:Text('Encuentra tu propiedad ideal',style: TextStyle(color: Color(0xFFFCFCFC)),)),
                           IconButton(icon:Icon(Icons.search), onPressed: (){
-
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(builder: (context) => SecondScreen()),
+                            );
                           },color: Color(0xFFFCFCFC),iconSize: 30.0,)
                         ],
                       ) ,
@@ -238,9 +227,6 @@ class _HomePageState extends State<HomePage> {
           FABBottomAppBarItem(iconData: Icons.account_circle, text: 'Perfil'),
         ],
       ),
-      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
-      floatingActionButton: _buildFab(
-          context),
     );
   }
 }
