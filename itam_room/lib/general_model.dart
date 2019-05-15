@@ -8,23 +8,15 @@ class FruitsCategory{
 
 
 }
-class Popular{
+class Homes{
   final String name;
   final String image;
   final String desc;
   final String price;
   final String rating;
 
-  Popular({this.name, this.image, this.desc, this.price, this.rating});
+  Homes({this.name, this.image, this.desc, this.price, this.rating});
 
-
-}
-
-class Homes{
-  final String image;
-  final String name;
-
-  Homes({this.image, this.name});
 
 }
 
@@ -32,10 +24,10 @@ class Homes{
 class GeneralModelList{
 
   final List<FruitsCategory> fruitsCategory;
-  final List<Popular> popular;
-  final List<Homes> homes;
+  final List<Homes> popular;
+  final List<Homes> rec;
 
-  GeneralModelList({this.fruitsCategory, this.popular, this.homes});
+  GeneralModelList({this.fruitsCategory, this.popular, this.rec});
 
 
 }
@@ -53,28 +45,24 @@ final GeneralModelList  fruitsCategoryList = new GeneralModelList(
       FruitsCategory(
           name: "Cuartos privados",
           image: "assets/images/cuarto.jpeg"
-      ),
-      FruitsCategory(
-          name: "Roomies",
-          image: "assets/images/roomie.jpeg"
       )
     ],
     popular: [
-      Popular(
+      Homes(
           name: "Departamento con dos cuartos",
           desc: "Increible departamento cerca del ITAM.",
           image: "assets/images/house2.jpeg",
           price: "\$10000 por mes",
           rating: "984"
       ),
-      Popular(
+      Homes(
           name: "Casa cerca del ITAM con tres cuartos",
           desc: "Perfecto si tienes muchos roomies.",
           image: "assets/images/meals.jpeg",
           price: "\$12000 por mes",
           rating: "788"
       ),
-      Popular(
+      Homes(
           name: "Increible departamento",
           desc: "A 5 minutos caminando de la universidad",
           image: "assets/images/house1.jpg",
@@ -82,18 +70,27 @@ final GeneralModelList  fruitsCategoryList = new GeneralModelList(
           rating: "900"
       ),
     ],
-    homes: [
+    rec: [
       Homes(
+          name: "Casa cerca del ITAM con tres cuartos",
+          desc: "Perfecto si tienes muchos roomies.",
+          image: "assets/images/meals.jpeg",
+          price: "\$12000 por mes",
+          rating: "788"
+      ),
+      Homes(
+          name: "Increible departamento",
+          desc: "A 5 minutos caminando de la universidad",
           image: "assets/images/house1.jpg",
-          name: "Casa 3 recamaras"
+          price: "\$13000 por mes",
+          rating: "900"
       ),
       Homes(
-          image: "assets/images/homes.jpeg",
-          name: "Casa 2 recamaras"
-      ),
-      Homes(
+          name: "Departamento con dos cuartos",
+          desc: "Increible departamento cerca del ITAM.",
           image: "assets/images/house2.jpeg",
-          name: "Cuarto 1 recamara"
+          price: "\$10000 por mes",
+          rating: "984"
       ),
     ]
 );

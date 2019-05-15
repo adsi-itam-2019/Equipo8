@@ -13,7 +13,7 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
 
-  Widget _buildPopularList(context,index, List<Popular>listImages) {
+  Widget _buildPopularList(context,index, List<Homes>listImages) {
 
 
     return
@@ -80,7 +80,6 @@ class _HomePageState extends State<HomePage> {
             Text(listImages[index].name,style: TextStyle(fontWeight: FontWeight.bold,fontSize: 17.0), textAlign: TextAlign.center,)
           ],
         ),
-
       );
   }
 
@@ -114,12 +113,12 @@ class _HomePageState extends State<HomePage> {
     setState(() {
       _lastSelected = 'TAB: $index';
     });
-  }
-
-  void _selectedFab(int index) {
-    setState(() {
-      _lastSelected = 'FAB: $index';
-    });
+    if(index==1){
+      Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => SecondScreen()),
+      );
+    }
   }
 
 
@@ -172,10 +171,10 @@ class _HomePageState extends State<HomePage> {
             ),
             Container(
               padding: EdgeInsets.only(left: 10.0),
-              height: 120.0,
+              height: 150.0,
               child: ListView.builder(
                   scrollDirection: Axis.horizontal,
-                  itemCount: 4,
+                  itemCount: 3,
                   itemBuilder: (context, index) {
                     return _buildFruitCategoryList(context,index,fruitsCategoryList.fruitsCategory);
                   }),
@@ -186,7 +185,7 @@ class _HomePageState extends State<HomePage> {
             ),
             Container(
               padding: EdgeInsets.only(left: 10.0),
-              height: 220.0,
+              height: 250.0,
 
               child: ListView.builder(
                   scrollDirection: Axis.horizontal,
@@ -201,13 +200,13 @@ class _HomePageState extends State<HomePage> {
             ),
             Container(
               padding: EdgeInsets.only(left: 10.0),
-              height: 150.0,
+              height: 250.0,
 
               child: ListView.builder(
                   scrollDirection: Axis.horizontal,
                   itemCount: 3,
                   itemBuilder: (context, index) {
-                    return _buildHomeList(context,index,fruitsCategoryList.homes);
+                    return _buildPopularList(context,index,fruitsCategoryList.rec);
                   }),
             ),
           ],
@@ -215,15 +214,12 @@ class _HomePageState extends State<HomePage> {
 
       ),
       bottomNavigationBar: FABBottomAppBar(
-        centerItemText: 'Descubre',
         color: Colors.grey,
         selectedColor: Color(0xFF33A433),
         notchedShape: CircularNotchedRectangle(),
         onTabSelected: _selectedTab,
         items: [
           FABBottomAppBarItem(iconData: Icons.home, text: 'Menú'),
-          FABBottomAppBarItem(iconData: Icons.favorite, text: 'Likes'),
-          FABBottomAppBarItem(iconData: Icons.navigation, text: 'Nav'),
           FABBottomAppBarItem(iconData: Icons.account_circle, text: 'Perfil'),
         ],
       ),
