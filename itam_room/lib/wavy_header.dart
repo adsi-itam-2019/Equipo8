@@ -11,8 +11,8 @@ class WavyHeader extends StatelessWidget {
         decoration: new BoxDecoration(
           //   shape: BoxShape.circle,
             gradient: new LinearGradient(colors: [
-              const Color(0xFFFB7592),
-              const Color(0xFFF8A19B),
+              const Color(0xFF298329),
+              const Color(0xFF33A433),
             ],
                 begin: const FractionalOffset(0.0, 0.0),
                 end: const FractionalOffset(0.9, 0.0),

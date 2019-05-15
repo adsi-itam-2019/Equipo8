@@ -53,7 +53,6 @@ class FABBottomAppBarState extends State<FABBottomAppBar> {
         onPressed: _updateIndex,
       );
     });
-    items.insert(items.length >> 1, _buildMiddleTabItem());
 
     return BottomAppBar(
       shape: widget.notchedShape,
@@ -66,24 +65,6 @@ class FABBottomAppBarState extends State<FABBottomAppBar> {
     );
   }
 
-  Widget _buildMiddleTabItem() {
-    return Expanded(
-      child: SizedBox(
-        height: widget.height,
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            SizedBox(height: widget.iconSize),
-            Text(
-              widget.centerItemText ?? '',
-              style: TextStyle(color: widget.color),
-            ),
-          ],
-        ),
-      ),
-    );
-  }
 
   Widget _buildTabItem({
     FABBottomAppBarItem item,

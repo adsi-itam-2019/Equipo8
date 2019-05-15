@@ -55,7 +55,7 @@ class _SecondScreenState extends State<SecondScreen> {
 
               // Extruding edge from the sliver appbar, may need to fix expanded height
               expandedHeight: MediaQuery.of(context).size.height /3.8,
-              backgroundColor: const Color(0xFFF8A19B),
+              backgroundColor: const Color(0xFF97D197),
             ),
             SliverToBoxAdapter(
               child: Container(
@@ -105,7 +105,7 @@ class _SecondScreenState extends State<SecondScreen> {
                                         child: Text(
                                           "Rosius",
                                           style:
-                                          TextStyle(color: Color(0xFFFB7592)),
+                                          TextStyle(color: Color(0xFF298329)),
                                         ),
                                       )
                                     ],
@@ -122,7 +122,7 @@ class _SecondScreenState extends State<SecondScreen> {
                                       child: Text(
                                         "*****",
                                         style:
-                                        TextStyle(color: Color(0xFFFB7592)),
+                                        TextStyle(color: Color(0xFF298329)),
                                       ),
                                     ),
                                   ],
@@ -137,7 +137,7 @@ class _SecondScreenState extends State<SecondScreen> {
                             children: <Widget>[
                               Icon(
                                 Icons.location_on,
-                                color: Color(0xFFFB7592),
+                                color: Color(0xFF298329),
                               ),
                               Text(
                                 "San Francisco",
@@ -153,22 +153,22 @@ class _SecondScreenState extends State<SecondScreen> {
                       children: <Widget>[
                         Icon(
                           Icons.group,
-                          color: Color(0xFFFB7592),
+                          color: Color(0xFF298329),
                           size: 30.0,
                         ),
                         Icon(
                           Icons.shopping_cart,
-                          color: Color(0xFFFB7592),
+                          color: Color(0xFF298329),
                           size: 30.0,
                         ),
                         Icon(
                           Icons.cake,
-                          color: Color(0xFFFB7592),
+                          color: Color(0xFF298329),
                           size: 30.0,
                         ),
                         Icon(
                           Icons.event_note,
-                          color: Color(0xFFFB7592),
+                          color: Color(0xFF298329),
                           size: 30.0,
                         ),
                       ],
@@ -196,7 +196,7 @@ class _SecondScreenState extends State<SecondScreen> {
                             padding: const EdgeInsets.only(bottom: 10.0),
                             child: Text(
                               "Read More....",
-                              style: TextStyle(color: Color(0xFFFB7592)),
+                              style: TextStyle(color: Color(0xFF298329)),
                             ),
                           ),
 
@@ -245,8 +245,8 @@ class _SecondScreenState extends State<SecondScreen> {
           decoration: new BoxDecoration(
             //   shape: BoxShape.circle,
               gradient: new LinearGradient(colors: [
-                const Color(0xFFFB7592),
-                const Color(0xFFF8A19B),
+                const Color(0xFF298329),
+                const Color(0xFF97D197),
               ],
                   begin: const FractionalOffset(0.0, 0.0),
                   end: const FractionalOffset(0.9, 0.0),

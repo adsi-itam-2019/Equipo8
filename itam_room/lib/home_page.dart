@@ -33,18 +33,18 @@ class _HomePageState extends State<HomePage> {
                   height: 100.0,
 
                   fit: BoxFit.cover,)),
-            Text(listImages[index].name,style: TextStyle(color: Colors.grey),),
-            Text(listImages[index].desc,style: TextStyle(fontWeight: FontWeight.bold,fontSize: 18.0),),
+            Text(listImages[index].name,style: TextStyle(fontWeight: FontWeight.bold,fontSize: 16.0),),
+            Text(listImages[index].desc,style: TextStyle(color: Colors.grey),),
             Text(listImages[index].price,style: TextStyle(fontSize: 12.0)),
             Row(
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
-                Icon(Icons.star,color: Colors.red,size: 15.0,),
-                Icon(Icons.star,color: Colors.red,size: 15.0,),
-                Icon(Icons.star,color: Colors.red,size: 15.0,),
-                Icon(Icons.star,color: Colors.red,size: 15.0,),
-                Icon(Icons.star,color: Colors.red,size: 15.0,),
+                Icon(Icons.star,color: Color(0xFF33A433),size: 15.0,),
+                Icon(Icons.star,color: Color(0xFF33A433),size: 15.0,),
+                Icon(Icons.star,color: Color(0xFF33A433),size: 15.0,),
+                Icon(Icons.star,color: Color(0xFF33A433),size: 15.0,),
+                Icon(Icons.star,color: Color(0xFF33A433),size: 15.0,),
 
                 Padding(
                   padding: const EdgeInsets.only(left:8.0),
@@ -77,7 +77,7 @@ class _HomePageState extends State<HomePage> {
                   height: 90.0,
 
                   fit: BoxFit.cover,)),
-            Text(listImages[index].name)
+            Text(listImages[index].name,style: TextStyle(fontWeight: FontWeight.bold,fontSize: 17.0), textAlign: TextAlign.center,)
           ],
         ),
 
@@ -131,7 +131,7 @@ class _HomePageState extends State<HomePage> {
           MaterialPageRoute(builder: (context) => SecondScreen()),
         );
       },
-      tooltip: 'airbnb',
+      tooltip: 'ITAMRoom',
       backgroundColor: Colors.white,
       elevation: 2.0,
     );
@@ -159,12 +159,12 @@ class _HomePageState extends State<HomePage> {
                       margin: const EdgeInsets.all(10.0),
                       padding: const EdgeInsets.symmetric(horizontal: 20.0,),
                       decoration: new BoxDecoration(
-                        color: Color(0xFFFCFCFC).withOpacity(0.3),
+                        color: Color(0xFF216921).withOpacity(0.3),
                         borderRadius: new BorderRadius.circular(10.0),
                       ),
                       child: Row(
                         children: <Widget>[
-                          Expanded(child:Text('Try "New York City',style: TextStyle(color: Color(0xFFFCFCFC)),)),
+                          Expanded(child:Text('Encuentra tu propiedad ideal',style: TextStyle(color: Color(0xFFFCFCFC)),)),
                           IconButton(icon:Icon(Icons.search), onPressed: (){
 
                           },color: Color(0xFFFCFCFC),iconSize: 30.0,)
@@ -173,20 +173,13 @@ class _HomePageState extends State<HomePage> {
                     ),
                   ),
                 ),
-                Padding(
-                  padding: const EdgeInsets.only(top:40.0,left: 10.0,),
-                  child: Align(
-                      alignment: Alignment.topLeft,
-                      child: Image.asset('assets/images/name.png',height: 40.0,color: Colors.white,)),
-                  // child: Text("Nearby",style: TextStyle(fontSize: 40.0,color: Color(0xFFFCFCFC),fontWeight: FontWeight.bold),)),
-                )
               ],
             ),
             Padding(
               padding: const EdgeInsets.only(top:10.0,left: 10.0,),
               child: Align(
                   alignment: Alignment.topLeft,
-                  child: Text("Categories",style: TextStyle(fontSize: 30.0,color: Colors.black54,fontWeight: FontWeight.bold),)),
+                  child: Text("Tipos de Propiedad",style: TextStyle(fontSize: 30.0,color: Colors.black54,fontWeight: FontWeight.bold),)),
             ),
             Container(
               padding: EdgeInsets.only(left: 10.0),
@@ -200,7 +193,7 @@ class _HomePageState extends State<HomePage> {
             ),
             Padding(
               padding: const EdgeInsets.only(top:10.0,left: 10.0,),
-              child: Text("Most Popular",style: TextStyle(fontSize: 30.0,color: Colors.black54,fontWeight: FontWeight.bold),),
+              child: Text("Populares",style: TextStyle(fontSize: 30.0,color: Colors.black54,fontWeight: FontWeight.bold),),
             ),
             Container(
               padding: EdgeInsets.only(left: 10.0),
@@ -215,7 +208,7 @@ class _HomePageState extends State<HomePage> {
             ),
             Padding(
               padding: const EdgeInsets.only(top:10.0,left: 10.0,),
-              child: Text("Homes",style: TextStyle(fontSize: 30.0,color: Colors.black54,fontWeight: FontWeight.bold),),
+              child: Text("Recomendadas para ti",style: TextStyle(fontSize: 30.0,color: Colors.black54,fontWeight: FontWeight.bold),),
             ),
             Container(
               padding: EdgeInsets.only(left: 10.0),
@@ -233,16 +226,16 @@ class _HomePageState extends State<HomePage> {
 
       ),
       bottomNavigationBar: FABBottomAppBar(
-        centerItemText: 'Start',
+        centerItemText: 'Descubre',
         color: Colors.grey,
-        selectedColor: Color(0xFFFB7592),
+        selectedColor: Color(0xFF33A433),
         notchedShape: CircularNotchedRectangle(),
         onTabSelected: _selectedTab,
         items: [
-          FABBottomAppBarItem(iconData: Icons.home, text: 'Home'),
+          FABBottomAppBarItem(iconData: Icons.home, text: 'Menú'),
           FABBottomAppBarItem(iconData: Icons.favorite, text: 'Likes'),
           FABBottomAppBarItem(iconData: Icons.navigation, text: 'Nav'),
-          FABBottomAppBarItem(iconData: Icons.account_circle, text: 'profile'),
+          FABBottomAppBarItem(iconData: Icons.account_circle, text: 'Perfil'),
         ],
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,

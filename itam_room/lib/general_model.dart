@@ -51,12 +51,12 @@ final GeneralModelList  fruitsCategoryList = new GeneralModelList(
           image: "assets/images/depa.jpeg"
       ),
       FruitsCategory(
-        name: "Cuartos privados",
-        image: "assets/images/cuarto.jpeg"
-      ),
-      FruitsCategory(
           name: "Cuartos privados",
           image: "assets/images/cuarto.jpeg"
+      ),
+      FruitsCategory(
+          name: "Roomies",
+          image: "assets/images/roomie.jpeg"
       )
     ],
     popular: [
@@ -69,7 +69,7 @@ final GeneralModelList  fruitsCategoryList = new GeneralModelList(
       ),
       Popular(
           name: "Casa cerca del ITAM con tres cuartos",
-          desc: "Perfecto si tienes muchos roomies. Barato.",
+          desc: "Perfecto si tienes muchos roomies.",
           image: "assets/images/meals.jpeg",
           price: "\$12000 por mes",
           rating: "788"
