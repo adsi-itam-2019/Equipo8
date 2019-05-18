@@ -2,11 +2,14 @@ import 'package:itam_room/fab_bottom_app_bar.dart';
 
 import 'package:itam_room/general_model.dart';
 import 'package:itam_room/second_page.dart';
+import 'package:itam_room/profile_page.dart';
 
 import 'package:itam_room/wavy_header.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
+  HomePage();
+
   @override
   _HomePageState createState() => _HomePageState();
 }
@@ -116,7 +119,7 @@ class _HomePageState extends State<HomePage> {
     if(index==1){
       Navigator.push(
         context,
-        MaterialPageRoute(builder: (context) => SecondScreen()),
+        MaterialPageRoute(builder: (context) => ProfileScreen()),
       );
     }
   }
@@ -220,7 +223,7 @@ class _HomePageState extends State<HomePage> {
         onTabSelected: _selectedTab,
         items: [
           FABBottomAppBarItem(iconData: Icons.home, text: 'Menú'),
-          FABBottomAppBarItem(iconData: Icons.account_circle, text: 'Perfil'),
+          FABBottomAppBarItem(iconData: Icons.account_circle, text: 'Perfil', ),
         ],
       ),
     );
