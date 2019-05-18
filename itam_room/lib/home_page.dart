@@ -222,7 +222,7 @@ class _HomePageState extends State<HomePage> {
         notchedShape: CircularNotchedRectangle(),
         onTabSelected: _selectedTab,
         items: [
-          FABBottomAppBarItem(iconData: Icons.home, text: 'Menú'),
+          FABBottomAppBarItem(iconData: Icons.home, text: 'Inicio'),
           FABBottomAppBarItem(iconData: Icons.account_circle, text: 'Perfil', ),
         ],
       ),
