@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:itam_room/home_page.dart';
+import 'package:itam_room/login.dart';
 
 void main() => runApp(MyApp());
 
@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.green,
       ),
-      home: HomePage(),
+      home: LoginScreen(),
     );
   }
 }

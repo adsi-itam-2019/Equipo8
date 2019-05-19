@@ -49,16 +49,16 @@ final GeneralModelList  fruitsCategoryList = new GeneralModelList(
     ],
     popular: [
       Homes(
-          name: "Departamento con dos cuartos",
-          desc: "Increible departamento cerca del ITAM.",
-          image: "assets/images/house2.jpeg",
+          name: "Hermosa casa con jardín",
+          desc: "Hermosa casa con vistas, jardín y alberca.",
+          image: "assets/images/casa.jpeg",
           price: "\$10000 por mes",
           rating: "984"
       ),
       Homes(
           name: "Casa cerca del ITAM con tres cuartos",
           desc: "Perfecto si tienes muchos roomies.",
-          image: "assets/images/meals.jpeg",
+          image: "assets/images/depa.jpeg",
           price: "\$12000 por mes",
           rating: "788"
       ),
@@ -74,7 +74,7 @@ final GeneralModelList  fruitsCategoryList = new GeneralModelList(
       Homes(
           name: "Casa cerca del ITAM con tres cuartos",
           desc: "Perfecto si tienes muchos roomies.",
-          image: "assets/images/meals.jpeg",
+          image: "assets/images/cuarto.jpeg",
           price: "\$12000 por mes",
           rating: "788"
       ),
