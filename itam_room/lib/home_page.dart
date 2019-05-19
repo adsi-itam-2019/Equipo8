@@ -17,8 +17,6 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
 
   Widget _buildPopularList(context,index, List<Homes>listImages) {
-
-
     return
       Container(
         width: 200.0,
@@ -140,7 +138,7 @@ class _HomePageState extends State<HomePage> {
                 Align(
                   alignment: Alignment.bottomCenter,
                   child: Padding(
-                    padding: const EdgeInsets.only(top:100.0),
+                    padding: const EdgeInsets.only(top:80.0),
                     child: Container(
                       height: 50.0,
 
