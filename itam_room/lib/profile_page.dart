@@ -24,25 +24,30 @@ class _ProfileScreenState extends State<ProfileScreen> {
           child: Column(
             children: <Widget>[
               Stack(
-              children: <Widget>[
-                WavyHeader(),
-                Padding(
-                  padding: const EdgeInsets.only(top: 90.0),
-                  child: Align(
-                    alignment: Alignment.center,
-                    child: Text(
-                      "RoomITAM",
-                      style: TextStyle(fontSize: 40.0,color: Colors.white, fontWeight: FontWeight.bold),
+                children: <Widget>[
+                  WavyHeader(),
+                  Padding(
+                    padding: const EdgeInsets.only(top: 90.0),
+                    child: Align(
+                      alignment: Alignment.center,
+                      child: Text(
+                        "RoomITAM",
+                        style: TextStyle(fontSize: 40.0,color: Colors.white, fontWeight: FontWeight.bold),
+                      ),
                     ),
                   ),
-                ),
-              ],
-             ),
-            IconButton(icon:Icon(Icons.account_box), onPressed: (){
-
-            },color: Colors.grey,iconSize: 110.0,),
+                ],
+              ),
+              CircleAvatar(
+                radius: 80.0,
+                backgroundImage:
+                AssetImage('assets/images/roomie.jpeg'),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(top: 20.0),
+              ),
               Text(
-                "Hola Unestudiante! ",
+                "Hola Juan! ",
                 style: TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold),
               ),
               Padding(

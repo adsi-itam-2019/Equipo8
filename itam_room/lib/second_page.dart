@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 
+import 'package:itam_room/profile_page.dart';
+
 class SecondScreen extends StatefulWidget {
   @override
   _SecondScreenState createState() => _SecondScreenState();
@@ -86,11 +88,19 @@ class _SecondScreenState extends State<SecondScreen> {
                                       ),
                                       Padding(
                                         padding: const EdgeInsets.only(left: 3.0),
-                                        child: Text(
-                                          "Juan",
-                                          style:
-                                          TextStyle(color: Color(0xFF298329)),
-                                        ),
+                                        child: GestureDetector(
+                                          onTap: (){
+                                            Navigator.push(
+                                              context,
+                                              MaterialPageRoute(builder: (context) => ProfileScreen()),
+                                            );
+                                          },
+                                          child: Text(
+                                            "Juan",
+                                            style:
+                                            TextStyle(color: Color(0xFF298329)),
+                                          ),
+                                        )
                                       )
                                     ],
                                   ),
