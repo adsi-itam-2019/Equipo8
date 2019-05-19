@@ -27,13 +27,22 @@ class _HomePageState extends State<HomePage> {
           children: <Widget>[
             ClipRRect(
                 borderRadius: BorderRadius.circular(10.0),
-                child: Image.asset(
+                child: GestureDetector(
+                  onTap: (){
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => SecondScreen()),
+                    );
+                  },
+                  child: Image.asset(
 
-                  listImages[index].image,
-                  width: 220.0,
-                  height: 100.0,
+                    listImages[index].image,
+                    width: 220.0,
+                    height: 100.0,
 
-                  fit: BoxFit.cover,)),
+                    fit: BoxFit.cover,),
+                  )
+            ),
             Text(listImages[index].name,style: TextStyle(fontWeight: FontWeight.bold,fontSize: 16.0),),
             Text(listImages[index].desc,style: TextStyle(color: Colors.grey),),
             Text(listImages[index].price,style: TextStyle(fontSize: 12.0)),
