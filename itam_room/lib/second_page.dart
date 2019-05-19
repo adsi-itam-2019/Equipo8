@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
-
+import 'package:itam_room/general_model.dart';
 import 'package:itam_room/profile_page.dart';
 
 class SecondScreen extends StatefulWidget {
+
   @override
-  _SecondScreenState createState() => _SecondScreenState();
+  _SecondScreenState createState({Key key, @required Homes home}) => _SecondScreenState();
 }
 
 class _SecondScreenState extends State<SecondScreen> {
