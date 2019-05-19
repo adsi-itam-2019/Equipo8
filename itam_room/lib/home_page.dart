@@ -152,14 +152,20 @@ class _HomePageState extends State<HomePage> {
                       height: 50.0,
 
                       margin: const EdgeInsets.all(10.0),
-                      padding: const EdgeInsets.symmetric(horizontal: 20.0,),
+                      padding: const EdgeInsets.symmetric(horizontal: 10.0,),
                       decoration: new BoxDecoration(
                         color: Color(0xFF216921).withOpacity(0.3),
                         borderRadius: new BorderRadius.circular(10.0),
                       ),
                       child: Row(
                         children: <Widget>[
-                          Expanded(child:Text('Encuentra tu propiedad ideal',style: TextStyle(color: Color(0xFFFCFCFC)),)),
+                          Expanded(
+                            child:TextField(
+                              decoration: const InputDecoration(
+                                hintText: 'Encuentra tu propiedad ideal'
+                              ),
+                            )
+                          ),
                           IconButton(icon:Icon(Icons.search), onPressed: (){
                             Navigator.push(
                               context,
